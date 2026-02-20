@@ -123,6 +123,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',   # arquivos de desenvolvimento
+]
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # pasta final do collectstatic
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
